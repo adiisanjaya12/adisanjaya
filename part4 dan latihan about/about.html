@@ -1,0 +1,23 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <p>
+            nama : i kadek adi sanjaya putra
+        </p>
+
+        <p>
+            prodi : sistem informasi
+        </p>
+
+        <p>
+            nim : 1801010016
+        </p>
+    </body>
+    <script> 
+        const electron = require("electron");
+        const {ipcRenderer} = electron;
+        ipcRenderer.send("appointment:about");
+    </script>
+</html>
