@@ -1,0 +1,53 @@
+<html>
+<head>
+<style>
+                input.btn
+                                {color: white;
+                                background: black;
+                                border: 1px outset black;
+                                font-family: "calibri", Times, serif;
+                                font-size: 14px;
+                                font-weight: bold;
+                                width : auto;}
+                </style>
+
+
+
+<body>
+<center>
+<b><font color="black" size="5">
+<p>Luas Permukaan Kubus</p>
+<form id="Formulir" name="formulir" method="post" action="">
+                <table width="500" border="0">
+                <tr>
+                <td width="178"><b><font color="black" size="5">Masukan sisi</td>
+                <td><input name="sisi" type="text" id="sisi"></td>
+                </tr>
+               
+                <tr>
+                <td><b><font color="black" size="5">Hasil Penghitungan Luas Permukaan</td>
+                <td><input name="luas" type="text" id="luas"></td>
+                </tr>
+</table>
+
+
+<p>
+    <input name="cari" type="button" id="cari" value="hitung" class="btn"
+    onclick="cariluas()"/>
+</p>
+</form>
+</center>
+
+<script laguage="javascript">
+function cariluas()
+{
+sisi=formulir.sisi.value
+sisi=formulir.sisi.value
+sisi=formulir.sisi.value
+formulir.luas.value= 6*sisi*sisi;
+}
+</script>
+<a href="rumah.html"> kembali ke halaman sebelumnya</a>
+</body>
+
+</html>

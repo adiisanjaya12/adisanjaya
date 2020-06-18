@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Luas alas kerucut</title>
+<style>
+                input.btn
+                                {color: white;
+                                background: black;
+                                border: 1px outset black;
+                                font-family: "calibri", Times, serif;
+                                font-size: 14px;
+                                font-weight: bold;
+                                width : auto;}
+                </style>
+
+
+</head>
+
+<center>
+    <b><font color="black" size="5">
+    <p>Luas Kerucut</p>
+    <form id="Formulir" name="formulir" method="post" action="">
+                    <table width="500" border="0">
+                    <tr>
+                    <td width="178"><b><font color="black" size="5">Masukan jari</td>
+                    <td><input name="jari" type="text" id="jari"></td>
+                    </tr>
+                    <tr>
+                    <td width="178"><b><font color="black" size="5">Masukan tinggi</td>
+                    <td><input name="tinggi" type="text" id="tinggi"></td>
+                    </tr>
+                    <tr>
+                    <td width="178"><b><font color="black" size="5">Masukan panjang garis pelukis</td>
+                    <td><input name="pelukis" type="text" id="pelukis"></td>
+                    </tr>
+                    <tr>
+                    <td><b><font color="black" size="5">Hasil Penghitungan luas</td>
+                    <td><input name="volume" type="text" id="luas"></td>
+                    </tr>
+    </table>
+
+
+    <p>
+        <p>
+            <input name="cari" type="button" id="cari" value="hitung" class="btn"
+            onclick="cariluas()"/>
+            </p>
+            </form>
+            <p>&nbsp;</p>
+            <script laguage="javascript">
+            function cariluas()
+            {
+            jari=formulir.jari.value;
+            jari=formulir.jari.value;
+            pelukis=formulir.pelukis.value;
+            tinggi=formulir.tinggi.value;
+            formulir.volume.value=22/7*jari* (pelukis+jari);
+            }
+        </script>
+    
+   <a href="rumah.html"> kembali ke halaman sebelumnya</a>
+
+</body>
+</html>
