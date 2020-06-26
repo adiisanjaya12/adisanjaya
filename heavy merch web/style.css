@@ -11,7 +11,7 @@ body {
     background-color: #ddd;
     font-size: 18px;
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
-    margin: 50px;
+    margin-top: 50px;
 }
 
 /* Container */
@@ -287,3 +287,45 @@ body {
 .carousel-item {
     height: 500px;
 }
+
+.jumbotron{
+    background-image: url(img/4.jpg);
+    background-size: cover;
+    color: white;
+    margin-bottom:0px;
+}
+
+  
+  .tentang-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 0;
+  }
+
+  .team {
+    margin-right: 50px;
+  }
+
+.fdb-block {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.fdb-block-color {
+    background-color:#ddd;
+}
+.fdb-block-footer {
+    margin-top: 50px;
+}
+
+.img-fluid:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+
