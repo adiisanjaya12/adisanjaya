@@ -1,13 +1,19 @@
 import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack';
-import { Splash, Login, Register, WelcomeAuth } from '../pages';
+import { Splash, Login, Register, WelcomeAuth, Home} from '../pages';
+import Detail from '../pages/Detail/Index';
 
 const Stack = createStackNavigator();
 
 const Router = () => {
     return (
         <Stack.Navigator>
-            <Stack.Screen name="Splash" component={Splash}/>
+            <Stack.Screen 
+                name="Splash" 
+                component={Splash}
+                options ={{
+                headerShown: false,
+                }}/>
             <Stack.Screen 
                 name="Login" 
                 component={Login}
@@ -23,6 +29,20 @@ const Router = () => {
             <Stack.Screen 
                 name="WelcomeAuth" 
                 component={WelcomeAuth} 
+                options ={{
+                headerShown: false,
+            }}
+            />
+            <Stack.Screen 
+                name="Home" 
+                component={Home} 
+                options ={{
+                headerShown: false,
+            }}
+            />
+            <Stack.Screen 
+                name="Detail" 
+                component={Detail} 
                 options ={{
                 headerShown: false,
             }}

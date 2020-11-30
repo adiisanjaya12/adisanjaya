@@ -54,7 +54,7 @@ const Login = ({navigation}) => {
                 secureTextEntry={true}
                 />
             <View style={styles.space(50)}/>
-            <Button title="Login" onPress={sendData}/>
+            <Button title="Login" onPress={() => navigation.navigate("Home")}/>
             </ScrollView>
         </View>
     );
