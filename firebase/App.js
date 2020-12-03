@@ -1,0 +1,43 @@
+import * as React from 'react';
+import { View, Text } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import HomeScreen from './component/HomeScreen';
+import Login from './component/Login';
+import Signup from './component/Signup';
+
+
+const Stack = createStackNavigator();
+
+function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Signup" 
+        screenOptions={{
+          headerTitleAlign: 'center',
+          headerStyle: {
+            backgroundColor: 'lightskyblue',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+      }}>
+        <Stack.Screen name="Home" component={HomeScreen} options={
+          { title: 'HomeScreen' },
+          { headerLeft: null }
+        }/>
+        <Stack.Screen name="Login" component={Login} options={
+          { title: 'Login' },
+          { headerLeft: null }
+        }/>
+        <Stack.Screen name="Signup" component={Signup} options={
+          { title: 'Signup' },
+          { headerLeft: null }
+        }/>
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+
+export default App;
