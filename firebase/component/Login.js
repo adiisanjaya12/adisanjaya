@@ -3,7 +3,6 @@ import { StyleSheet, Text, View, TextInput, Button, Alert, ActivityIndicator } f
 
 import auth from '@react-native-firebase/auth';
 
-
 export default class Login extends Component {
 
     constructor() {
@@ -70,7 +69,7 @@ export default class Login extends Component {
                     secureTextEntry={true}
                 />
                 <Button
-                    color="lightskyblue"
+                    color="green"
                     title="Signin"
                     onPress={() => this.userLogin()}
                 />
@@ -103,7 +102,7 @@ const styles = StyleSheet.create({
         borderBottomWidth: 1
     },
     loginText: {
-        color: 'lightskyblue',
+        color: 'red',
         marginTop: 25,
         textAlign: 'center'
     },

@@ -79,7 +79,7 @@ class Signup extends React.Component {
                     secureTextEntry={true}
                 />
                 <Button
-                    color="lightskyblue"
+                    color="green"
                     title="Signup"
                     onPress={() => this.registerUser()}
                 />

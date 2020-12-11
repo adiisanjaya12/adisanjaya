@@ -16,7 +16,7 @@ function App() {
         screenOptions={{
           headerTitleAlign: 'center',
           headerStyle: {
-            backgroundColor: 'lightskyblue',
+            backgroundColor: 'red',
           },
           headerTintColor: '#fff',
           headerTitleStyle: {
